@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:480px){
+    .additional-info-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+    .footer_nosotros{
+        margin-top: 55rem;   
+    }
+}

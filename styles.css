@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --principal-color: #006400;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #536300; /* Verde oscuro */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+header a{
+    height: 50px;
+    flex-basis: 15%;
+    
+}
+
+header a img{
+    width: 100%;
+    height: 130px;
+}
+header nav{
+    flex-basis: 85%;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+/*clases para submenu*/
+.liEncabezado:nth-child(1){
+    position: relative;
+  }
+  .liEncabezado:nth-child(1) ul{
+    background-color: #536300;
+    position: absolute;
+    top: 1.2rem;
+    left: -1rem;
+    padding: 1rem;
+    display: none;
+    list-style: none;
+    z-index: 9;
+  }
+  .liEncabezado:nth-child(1) ul li{
+    padding: 0.5rem 0;
+  }
+
+h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #8B4513; /* Marrón */
+    color: white;
+    padding: 1.5rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 2rem;
+    max-width: 300px;
+}
+
+#home {
+    background-image: url('IMAGENES/imagen_principal.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#home>h2 {
+    font-size: xxx-large;
+    font-family: "Roboto", sans-serif;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+.qs_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+.services,
+.menus,
+.sustainability,
+.testimonials {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.divimagen{
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.botonEncabezado {
+    background-color: var(--principal-color);
+    color: white;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.divespacio {
+    display: flex;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.divespacio div:first-child {
+    flex-basis: 40%;
+}
+
+.divespacio div:first-child img {
+    width: 100%;
+}
+
+.divespacio div:nth-child(2) {
+    flex-basis: 60%;
+    background-color: #f2e5d5;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+}
+
+.divespacio div:nth-child(2)>p {
+    background-color: #f2e5d5;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+#home img {
+    background-image: url(IMAGENES/9k=.jfif);
+    transition: all 0.5s ease;
+}
+
+.img-swap:hover {
+    background-image: url(IMAGENES/imagen_principal.jpg);
+}
+
+.divespacio1 {
+    display: flex;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+}
+
+.footer-column a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.footer-column form button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons div {
+    margin: 0 5px;
+}
+.section_menus{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.section_menus>div:first-child {
+    padding-left: 30%;
+    margin: 10rem 0;
+}
+.contenedor-elfsight{
+    width: 30vw;
+}
+.section_menu a{
+    margin: auto;
+}
+.additional-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.value-card {
+    background-color: #f2e5d5;
+    color: #333;
+    text-align: center;
+    flex-basis: 40%;
+    padding: 3rem ;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #536300;
+}
+
+.value-card p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+}
+.additional-info.black-section {
+    background-color: #333; /* Fondo negro */
+    color: #f5f5f5; /* Texto blanco */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.additional-info.black-section h3 {
+    color: #8B4513; /* Marrón oscuro */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.additional-info.black-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #536300; /* Color verde oscuro */
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#menu{
+    text-align: center;
+}
+.divespacio{text-align: center;
+
+}
+.divespacio>p{text-align: center;
+padding: 2rem;
+}
+#services>div{
+    padding: 0 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+.service-item {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-color: #536300;
+}
+.service-item h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.service-item img {
+    border-radius: 10px;
+}
+.service-item p {
+   margin-bottom: 5rem;
+   color: white;
+}
+.divimagen img{
+    width: 100%;
+}
+                                /*empieza hamburguesa*/
+                                ul.hamburger{
+                                    display: none;
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    list-style: none;
+                                    width: 50px;
+                                    cursor: pointer;
+                                }
+                                ul.hamburger li{
+                                    height: 12px;
+                                    border-bottom: 3px solid white;
+                                    transition: transform 0.5s ease-in-out;
+                                }
+                                ul.hamburger:hover li:first-child{
+                                    transform: translateY(2px);
+                                }
+                                ul.hamburger:hover li:nth-child(2){
+                                    transform:translateY(-2px);
+                                }
+                                /*termina hamburguesa*/
+                                .close{
+                                    display: none;
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    width: 30px;
+                                }
+                                .close_img{
+                                    width: 100%;
+                                }
+/*Estas son las mediaqueries de home*/
+@media screen and (max-width:480px){
+                                                nav{
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                z-index: 9;
+                                                background-color: #536300;
+                                                display: none;
+
+                                                }
+                                                nav ul{
+                                                    flex-direction: column;
+                                                    height: 100%;
+                                                    justify-content: center;
+                                                }
+                                                nav ul li{
+                                                    padding: 1rem 0;
+                                                }
+                                                nav ul li ul.submenu{
+                                                    display: none;
+                                                }
+                                                nav ul li:last-child{
+                                                    display: none;
+                                                }
+                                                header a img{
+                                                    height: 40px;
+                                                }
+                                                header nav a{
+                                                    font-size: 1.7rem;
+                                                }
+                                                ul.hamburger{
+                                                    display: block;
+                                                }
+                                                .close{
+                                                    display: block;
+                                                }
+    #home>h2:nth-child(2){
+        display: none;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .divespacio{
+        flex-direction: column;
+    }
+    #services>div{
+        flex-direction: column;
+    }
+    .btn-Servicios{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        padding: 0px 40px;
+    }
+    .cta-button{
+        flex-grow: 1;
+        text-align: center;
+    }
+    .section_menus{
+        padding: 0;
+    }
+    #services div{
+        padding: 0 5vw;
+    }
+}
